@@ -1,0 +1,11 @@
+1.ps aux
+2.pstree
+3.top -o %CPU -n 1
+4. ps -eLf | awk '{print $2}' | sort | uniq -c | sort -nr | awk '$1 > 2'
+5.Запустить top, затем нажать r, ввести PID процесса и указать новое значение приоритета
+6.lsof -u $USER
+7. free -h
+8. df -h
+9.cat /proc/<PID>/status
+10.cat /proc/cpuinfo
+11.lsmod
